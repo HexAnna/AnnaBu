@@ -59,3 +59,31 @@ my_list.reverse=True
 my_list.clear
 my_tuple = (1, 2 , 3, 4, 5)
 print (my_tuple)
+my_dict = {'animal': 'bear', 'age': 18}
+new_dict = dict(animal='lion', age=50)
+print (my_dict)
+print (new_dict)
+
+print (my_dict['animal'])
+print(my_dict.get('weight', 10)) #ответ по умолчанию, вместо None
+print (my_dict)
+
+items = my_dict.items()
+print (items)
+
+for value in my_dict.keys():
+    print (value)
+my_dict.update({'animal': 'fox'})
+my_dict.update({'Weight': 36})
+my_dict ['weight'] = 36
+print (my_dict)
+
+a = set(a)
+print (a)
+
+a = ['h', 'e']
+a = set(a)
+b = set('hello')
+print (a)
+print (b)
+print(a.issubset(b))
