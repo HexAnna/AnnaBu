@@ -13,6 +13,11 @@ n = int (input('Школьников:'))
 k = int (input ('Яблок:'))
 print (k//n)
 print (k%n)
-
-
+#Hello, Harry
+name = input()
+print('Hello', name)
+#Следующее и предыдущее
+o = int(input('Your number:'))
+print('The next for the number', o, 'is', o+1)
+print('The previous  for the number', o, 'is', o-1)
 
