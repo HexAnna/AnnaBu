@@ -87,3 +87,47 @@ b = set('hello')
 print (a)
 print (b)
 print(a.issubset(b))
+
+#Lesson 4 9/06/21
+for i in range (0,10, 2):
+    print (i)
+a = -5
+print (abs (a))
+my_list = [1,2,3,5,10,1,2,3]
+print (max (my_list))
+print (sum (my_list))
+
+def my_len (array):
+    animal = 'lion'   #переменная только для этой функции. Функция видит всё что снаружи.
+    my_len ()
+
+name = 'Mike'
+age = 10
+
+print ((lambda a, b: a + b) (5,10))
+func = lambda a, b: a + b
+print (func(9,10))
+
+def sum (a, b):
+    return a+b
+my_sum = sum (1, 2)
+
+def great_sum(*args):
+    print (args)
+    summer = 0
+    for i in args:
+        summer += i
+    return summer
+print (great_sum(1,2,3,4,5,6,2))
+my_list = [1, 2, 3]
+other_list = [4, 5, 6]
+print (list(zip (my_list, other_list)))
+
+print (my_list (map(lambda x: x*x, [1, 2,3, 4])))
+my_list = []
+
+import os
+path = os.path.join ('autobot.py')
+f = open (path, 'r', encoding='UTF-8')
+print (f.readlin())
+f.close()
