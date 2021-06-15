@@ -3,8 +3,11 @@
 #Task 1
 name = input('Введите ваше имя:')
 age = int(input('Введите ваш возраст:'))
-a = (age-18)
-print(name, 'на', a, 'года/лет больше 18')
+o = (age-18)
+if o < 18:
+    print ( name , 'на' , abs (o) , 'года / лет меньше 18' )
+elif o > 18:
+    print(name, 'на', o, 'года / лет больше 18')
 #Task 2
 q = int(input('Введите число 1:'))
 w = int(input('Введите число 2:'))
