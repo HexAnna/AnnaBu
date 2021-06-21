@@ -11,5 +11,6 @@ print(p)
 #Task 3
 s = int (input('Your ticket number: '))
 def lucky_ticket (s):
-    a = [int(i) for i in s]
-    return sum (a[:3] == sum (a[3:]))
+    a = tuple(map(int, s))
+    b = len(s) // 2
+    return sum(a[:b]) == sum(a[b:])
