@@ -142,6 +142,9 @@ class Avito:
     text = 'Any words'
 
 class Transport (Avito):
+    def __init__(self):
+        self.by = 'Was used'
+        
     car_model = 'User model'
     speed = 'Caer speed'
     yaer = 'Yaer'
