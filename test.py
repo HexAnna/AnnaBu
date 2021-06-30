@@ -131,3 +131,20 @@ path = os.path.join ('autobot.py')
 f = open (path, 'r', encoding='UTF-8')
 print (f.readlin())
 f.close()
+
+
+
+
+class Avito:
+    name = 'User'
+    se_name = 'User_Sename'
+    telefon_namber = 8800
+    text = 'Any words'
+
+class Transport (Avito):
+    car_model = 'User model'
+    speed = 'Caer speed'
+    yaer = 'Yaer'
+
+class 
+
