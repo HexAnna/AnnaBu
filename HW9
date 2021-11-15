@@ -22,6 +22,7 @@ class Input(Tag):
     def get_html(self):
         return "<></{}>".format(self.in_type)
 
+
 class Text(Tag):
     def __init__(self):
         self.text = "p"
@@ -37,12 +38,14 @@ class Link(Tag):
     def get_html(self):
         return "<></{}>".format(self.link)
 
-class None_text(Tag):
+
+class Notext(Tag):
     def __init__(self):
-        self.none_text = ''
+        self.notext = ''
 
     def get_html(self):
-        return "<></{}>".format(self.none_text)
+        return "<></{}>".format(self.notext)
+
 
 class Tagfactory:
 
@@ -57,7 +60,8 @@ class Tagfactory:
         elif name == 'p':
             return Text()
         elif name == '':
-            return None_text()
+            return Notext()
+
 
 factory = Tagfactory()
 elements = ["image", "input", 'a', 'p', '']
